@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "SafariApp",
+    "slug": "safariapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.Qontetina0451.SafariApp",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need access to your location for picking up and dropping off.",
+        "NSLocationAlwaysUsageDescription": "This app requires location access to function properly even when running in the background."
+      }
+    },
+    "android": {
+      "package": "com.Qontetina0451.SafariApp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow SafariApp to access your location for better service."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d84abee4-14a3-46a4-a6b6-0404a64ddb85"
+      }
+    }
+  }
+}
